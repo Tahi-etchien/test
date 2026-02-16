@@ -1,0 +1,3034 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Édition Noire | Vêtements Premium Sombre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Variables & Reset - Palette Sombre Élégante */
+        :root {
+            /* Palette Sombre Premium */
+            --noir-absolu: #0a0a0a;
+            --noir-charbon: #121212;
+            --noir-velours: #1a1a1a;
+            --gris-anthracite: #2a2a2a;
+            --gris-satin: #3a3a3a;
+            --gris-platine: #8a8a8a;
+            --blanc-creme: #f5f3f0;
+            --or-sombre: #b89a5a;
+            --or-doré: #d4af37;
+            --cuivre: #b87333;
+            
+            /* Design Éditorial Sombre */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 16px;
+            --shadow-subtile: 0 4px 20px rgba(0, 0, 0, 0.3);
+            --shadow-eleve: 0 12px 40px rgba(0, 0, 0, 0.4);
+            --transition-normal: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            
+            /* Espacements Élégants */
+            --space-xs: 8px;
+            --space-sm: 20px;
+            --space-md: 40px;
+            --space-lg: 80px;
+            --space-xl: 120px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--blanc-creme);
+            background-color: var(--noir-charbon);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+        
+        section {
+            padding: var(--space-xl) 0;
+        }
+        
+        /* Header Sombre Élégant */
+        .header-sombre {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: var(--space-sm) 0;
+            background-color: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(42, 42, 42, 0.5);
+            transition: all var(--transition-fast);
+        }
+        
+        .header-sombre.scrolled {
+            padding: 12px 0;
+            background-color: rgba(10, 10, 10, 0.98);
+            border-bottom: 1px solid var(--gris-anthracite);
+        }
+        
+        .nav-sombre {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-sombre {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--blanc-creme);
+            position: relative;
+            display: inline-block;
+            letter-spacing: 1px;
+        }
+        
+        .logo-sombre:after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, var(--or-sombre), transparent);
+        }
+        
+        .nav-menu-sombre {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+        
+        .nav-link-sombre {
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 8px 0;
+            position: relative;
+            transition: color var(--transition-fast);
+            color: var(--gris-platine);
+        }
+        
+        .nav-link-sombre:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: linear-gradient(90deg, var(--or-sombre), var(--cuivre));
+            transition: width var(--transition-normal);
+        }
+        
+        .nav-link-sombre:hover {
+            color: var(--blanc-creme);
+        }
+        
+        .nav-link-sombre:hover:after {
+            width: 100%;
+        }
+        
+        .nav-actions-sombre {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+        
+        .nav-icon-sombre {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            transition: all var(--transition-fast);
+            position: relative;
+            border: 1px solid transparent;
+        }
+        
+        .nav-icon-sombre:hover {
+            background-color: rgba(42, 42, 42, 0.5);
+            border-color: var(--gris-anthracite);
+            transform: translateY(-2px);
+        }
+        
+        .cart-count-sombre, .wishlist-count-sombre {
+            position: absolute;
+            top: -3px;
+            right: -3px;
+            background: linear-gradient(135deg, var(--or-sombre), var(--cuivre));
+            color: var(--noir-absolu);
+            font-size: 0.7rem;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+        
+        /* Barre de recherche */
+        .search-container {
+            position: relative;
+        }
+        
+        .search-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            display: none;
+            opacity: 0;
+            transition: opacity var(--transition-normal);
+            backdrop-filter: blur(10px);
+        }
+        
+        .search-overlay.active {
+            display: block;
+            opacity: 1;
+        }
+        
+        .search-modal {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 600px;
+            background: linear-gradient(135deg, var(--noir-velours) 0%, var(--gris-anthracite) 100%);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+            box-shadow: var(--shadow-eleve);
+            border: 1px solid var(--gris-anthracite);
+        }
+        
+        .search-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-md);
+        }
+        
+        .search-title {
+            font-size: 1.4rem;
+            background: linear-gradient(135deg, var(--blanc-creme) 0%, var(--or-sombre) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .close-search {
+            background: rgba(42, 42, 42, 0.5);
+            border: 1px solid var(--gris-anthracite);
+            color: var(--gris-platine);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .close-search:hover {
+            color: var(--blanc-creme);
+            background: var(--gris-anthracite);
+            transform: rotate(90deg);
+        }
+        
+        .search-input-container {
+            position: relative;
+            margin-bottom: var(--space-md);
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 16px 20px 16px 50px;
+            background: var(--noir-absolu);
+            border: 1px solid var(--gris-anthracite);
+            border-radius: var(--radius-sm);
+            color: var(--blanc-creme);
+            font-size: 1rem;
+            transition: all var(--transition-fast);
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: var(--or-sombre);
+            box-shadow: 0 0 0 2px rgba(184, 154, 90, 0.2);
+        }
+        
+        .search-icon-input {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--or-sombre);
+        }
+        
+        .search-results {
+            max-height: 400px;
+            overflow-y: auto;
+            border-radius: var(--radius-sm);
+        }
+        
+        .search-result-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid var(--gris-anthracite);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .search-result-item:hover {
+            background-color: rgba(184, 154, 90, 0.1);
+        }
+        
+        .search-result-image {
+            width: 60px;
+            height: 60px;
+            border-radius: var(--radius-sm);
+            object-fit: cover;
+            margin-right: 15px;
+            border: 1px solid var(--gris-anthracite);
+        }
+        
+        .search-result-info {
+            flex: 1;
+        }
+        
+        .search-result-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--blanc-creme);
+        }
+        
+        .search-result-category {
+            font-size: 0.8rem;
+            color: var(--or-sombre);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .search-result-price {
+            font-weight: 700;
+            color: var(--or-sombre);
+            margin-left: 15px;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--gris-platine);
+        }
+        
+        /* Hero Section Sombre */
+        .hero-sombre {
+            height: 100vh;
+            min-height: 800px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(184, 154, 90, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(180, 115, 51, 0.05) 0%, transparent 50%),
+                linear-gradient(180deg, var(--noir-absolu) 0%, var(--noir-charbon) 100%);
+            padding-top: 80px;
+        }
+        
+        .hero-content-sombre {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+        
+        .hero-text-container-sombre {
+            opacity: 0;
+            transform: translateX(-60px);
+            animation: slideInLeft var(--transition-slow) forwards;
+        }
+        
+        .hero-title-sombre {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: var(--space-md);
+            position: relative;
+            background: linear-gradient(135deg, var(--blanc-creme) 0%, var(--or-sombre) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle-sombre {
+            font-size: 1.1rem;
+            color: var(--gris-platine);
+            margin-bottom: var(--space-lg);
+            max-width: 500px;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+        
+        .hero-cta-sombre {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, var(--gris-anthracite) 0%, var(--noir-velours) 100%);
+            color: var(--blanc-creme);
+            padding: 18px 40px;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: all var(--transition-normal);
+            border: 1px solid var(--gris-anthracite);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-cta-sombre:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(184, 154, 90, 0.2), transparent);
+            transition: left 0.7s;
+        }
+        
+        .hero-cta-sombre:hover {
+            background: linear-gradient(135deg, var(--noir-velours) 0%, var(--gris-anthracite) 100%);
+            border-color: var(--or-sombre);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-subtile);
+        }
+        
+        .hero-cta-sombre:hover:before {
+            left: 100%;
+        }
+        
+        .hero-image-container-sombre {
+            position: relative;
+            opacity: 0;
+            transform: translateX(60px);
+            animation: slideInRight var(--transition-slow) 0.2s forwards;
+        }
+        
+        .hero-image-sombre {
+            width: 100%;
+            height: 600px;
+            background: linear-gradient(135deg, var(--noir-velours) 0%, var(--gris-anthracite) 100%);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            position: relative;
+            box-shadow: var(--shadow-eleve);
+            border: 1px solid rgba(42, 42, 42, 0.5);
+        }
+        
+        .hero-badge-sombre {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            background: linear-gradient(135deg, var(--or-sombre) 0%, var(--cuivre) 100%);
+            color: var(--noir-absolu);
+            padding: 12px 24px;
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            animation: float 3s ease-in-out infinite;
+            z-index: 10;
+            box-shadow: 0 4px 15px rgba(184, 154, 90, 0.3);
+        }
+        
+        /* Section Catégories Sombre */
+        .section-title-sombre {
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: var(--space-lg);
+            position: relative;
+            padding-bottom: var(--space-md);
+            background: linear-gradient(135deg, var(--blanc-creme) 0%, var(--or-sombre) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-title-sombre:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--or-sombre), transparent);
+        }
+        
+        .categories-grid-sombre {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-md);
+        }
+        
+        .category-card-sombre {
+            height: 380px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            position: relative;
+            background: linear-gradient(135deg, var(--noir-velours) 0%, var(--gris-anthracite) 100%);
+            transition: all var(--transition-normal);
+            opacity: 0;
+            transform: translateY(40px);
+            border: 1px solid rgba(42, 42, 42, 0.3);
+        }
+        
+        .category-card-sombre.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .category-card-sombre:hover {
+            transform: translateY(-12px);
+            box-shadow: var(--shadow-eleve);
+            border-color: rgba(184, 154, 90, 0.3);
+        }
+        
+        .category-image-sombre {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-slow);
+        }
+        
+        .category-card-sombre:hover .category-image-sombre {
+            transform: scale(1.05);
+        }
+        
+        .category-overlay-sombre {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: var(--space-lg);
+            background: linear-gradient(to top, rgba(10, 10, 10, 0.95), transparent);
+            color: var(--blanc-creme);
+        }
+        
+        .category-title-sombre {
+            font-size: 1.8rem;
+            margin-bottom: var(--space-xs);
+        }
+        
+        .category-count-sombre {
+            font-size: 0.9rem;
+            color: var(--or-sombre);
+            letter-spacing: 0.05em;
+            font-weight: 500;
+        }
+        
+        /* Filtres Produits Sombre */
+        .filters-sombre {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-lg);
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn-sombre {
+            background: linear-gradient(135deg, var(--noir-velours) 0%, var(--gris-anthracite) 100%);
+            border: 1px solid var(--gris-anthracite);
+            color: var(--gris-platine);
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            letter-spacing: 0.05em;
+        }
+        
+        .filter-btn-sombre:hover, .filter-btn-sombre.active {
+            background: linear-gradient(135deg, var(--gris-anthracite) 0%, var(--noir-velours) 100%);
+            color: var(--blanc-creme);
+            border-color: var(--or-sombre);
+            transform: translateY(-2px);
+        }
+        
+        /* Produits - Cartes Sombres */
+        .products-grid-sombre {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-md);
+        }
+        
+        .product-card-sombre {
+            background: linear-gradient(135deg, var(--noir-velours) 0%, var(--gris-anthracite) 100%);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-subtile);
+            transition: all var(--transition-normal);
+            position: relative;
+            opacity: 0;
+            transform: translateY(30px);
+            border: 1px solid rgba(42, 42, 42, 0.3);
+        }
+        
+        .product-card-sombre.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .product-card-sombre:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-eleve);
+            border-color: rgba(184, 154, 90, 0.2);
+        }
+        
+        .product-image-container-sombre {
+            height: 340px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-image-sombre {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-normal);
+        }
+        
+        .product-card-sombre:hover .product-image-sombre {
+            transform: scale(1.05);
+        }
+        
+        .product-badges-sombre {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            z-index: 2;
+        }
+        
+        .product-badge-sombre {
+            padding: 5px 10px;
+            border-radius: var(--radius-sm);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        
+        .badge-new-sombre {
+            background: linear-gradient(135deg, var(--or-sombre) 0%, var(--cuivre) 100%);
+            color: var(--noir-absolu);
+        }
+        
+        .badge-sale-sombre {
+            background: linear-gradient(135deg, var(--gris-anthracite) 0%, var(--noir-velours) 100%);
+            color: var(--blanc-creme);
+            border: 1px solid var(--or-sombre);
+        }
+        
+        .badge-exclusive-sombre {
+            background: var(--noir-absolu);
+            color: var(--or-sombre);
+            border: 1px solid var(--or-sombre);
+        }
+        
+        .product-actions-sombre {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 2;
+            opacity: 0;
+            transform: translateX(10px);
+            transition: all var(--transition-fast);
+        }
+        
+        .product-card-sombre:hover .product-actions-sombre {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .action-btn-sombre {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--gris-anthracite);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--blanc-creme);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .action-btn-sombre:hover {
+            background: var(--or-sombre);
+            color: var(--noir-absolu);
+            transform: scale(1.1);
+            border-color: var(--or-sombre);
+        }
+        
+        .action-btn-sombre.favorited {
+            color: #ff6b6b;
+        }
+        
+        .product-info-sombre {
+            padding: var(--space-md);
+        }
+        
+        .product-title-sombre {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--blanc-creme);
+        }
+        
+        .product-category-sombre {
+            font-size: 0.8rem;
+            color: var(--or-sombre);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .product-price-container-sombre {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .product-price-sombre {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--blanc-creme);
+        }
+        
+        .product-price-old-sombre {
+            font-size: 0.9rem;
+            color: var(--gris-platine);
+            text-decoration: line-through;
+        }
+        
+        .product-options-sombre {
+            margin-bottom: 15px;
+        }
+        
+        .option-title-sombre {
+            font-size: 0.85rem;
+            color: var(--gris-platine);
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .option-hint-sombre {
+            font-size: 0.75rem;
+            color: var(--or-sombre);
+            font-style: italic;
+        }
+        
+        .product-colors-sombre, .product-sizes-sombre {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .color-option-sombre, .size-option-sombre {
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            position: relative;
+        }
+        
+        .color-option-sombre {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 2px solid var(--gris-anthracite);
+        }
+        
+        .color-option-sombre:hover, .color-option-sombre.selected {
+            transform: scale(1.2);
+            box-shadow: 0 0 10px rgba(184, 154, 90, 0.5);
+        }
+        
+        .color-option-sombre.selected {
+            border-color: var(--or-sombre);
+        }
+        
+        .color-name-sombre {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--noir-absolu);
+            color: var(--blanc-creme);
+            padding: 4px 8px;
+            border-radius: var(--radius-sm);
+            font-size: 0.7rem;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-fast);
+            border: 1px solid var(--gris-anthracite);
+            z-index: 10;
+        }
+        
+        .color-option-sombre:hover .color-name-sombre {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(-2px);
+        }
+        
+        .size-option-sombre {
+            min-width: 32px;
+            height: 32px;
+            border-radius: var(--radius-sm);
+            background: var(--noir-velours);
+            border: 1px solid var(--gris-anthracite);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--gris-platine);
+        }
+        
+        .size-option-sombre:hover, .size-option-sombre.selected {
+            background: var(--or-sombre);
+            color: var(--noir-absolu);
+            border-color: var(--or-sombre);
+            transform: translateY(-2px);
+        }
+        
+        .size-option-sombre.unavailable {
+            opacity: 0.4;
+            cursor: not-allowed;
+            text-decoration: line-through;
+        }
+        
+        .size-option-sombre.unavailable:hover {
+            background: var(--noir-velours);
+            color: var(--gris-platine);
+            border-color: var(--gris-anthracite);
+            transform: none;
+        }
+        
+        .add-to-cart-sombre {
+            width: 100%;
+            background: linear-gradient(135deg, var(--gris-anthracite) 0%, var(--noir-velours) 100%);
+            color: var(--blanc-creme);
+            border: 1px solid var(--gris-anthracite);
+            padding: 12px;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .add-to-cart-sombre:hover {
+            background: linear-gradient(135deg, var(--or-sombre) 0%, var(--cuivre) 100%);
+            color: var(--noir-absolu);
+            transform: translateY(-2px);
+            border-color: transparent;
+            box-shadow: 0 5px 15px rgba(184, 154, 90, 0.3);
+        }
+        
+        /* Panier Sidebar Sombre */
+        .cart-sidebar-sombre, .wishlist-sidebar-sombre {
+            position: fixed;
+            top: 0;
+            right: -450px;
+            width: 100%;
+            max-width: 400px;
+            height: 100%;
+            background: linear-gradient(135deg, var(--noir-absolu) 0%, var(--noir-charbon) 100%);
+            z-index: 2000;
+            transition: right var(--transition-normal);
+            display: flex;
+            flex-direction: column;
+            box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
+            border-left: 1px solid var(--gris-anthracite);
+        }
+        
+        .cart-sidebar-sombre.active, .wishlist-sidebar-sombre.active {
+            right: 0;
+        }
+        
+        .cart-header-sombre, .wishlist-header-sombre {
+            padding: var(--space-md);
+            border-bottom: 1px solid var(--gris-anthracite);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 10, 10, 0.9);
+        }
+        
+        .cart-title-sombre, .wishlist-title-sombre {
+            font-size: 1.4rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--blanc-creme) 0%, var(--or-sombre) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .close-cart-sombre, .close-wishlist-sombre {
+            background: rgba(42, 42, 42, 0.5);
+            border: 1px solid var(--gris-anthracite);
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: var(--gris-platine);
+            transition: all var(--transition-fast);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .close-cart-sombre:hover, .close-wishlist-sombre:hover {
+            color: var(--blanc-creme);
+            background: var(--gris-anthracite);
+            transform: rotate(90deg);
+        }
+        
+        .cart-items-sombre, .wishlist-items-sombre {
+            flex: 1;
+            padding: var(--space-md);
+            overflow-y: auto;
+        }
+        
+        .cart-item-sombre, .wishlist-item-sombre {
+            display: flex;
+            padding: var(--space-sm) 0;
+            border-bottom: 1px solid var(--gris-anthracite);
+            gap: var(--space-sm);
+        }
+        
+        .cart-item-image-sombre, .wishlist-item-image-sombre {
+            width: 80px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--gris-anthracite) 0%, var(--noir-velours) 100%);
+            border-radius: var(--radius-sm);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 1px solid var(--gris-anthracite);
+        }
+        
+        .cart-item-img, .wishlist-item-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .cart-item-details-sombre, .wishlist-item-details-sombre {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .cart-item-title-sombre, .wishlist-item-title-sombre {
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+            color: var(--blanc-creme);
+        }
+        
+        .cart-item-meta-sombre, .wishlist-item-meta-sombre {
+            font-size: 0.8rem;
+            color: var(--gris-platine);
+            margin-bottom: 10px;
+        }
+        
+        .cart-item-actions-sombre, .wishlist-item-actions-sombre {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .cart-item-quantity-sombre {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .quantity-btn-sombre {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--gris-anthracite);
+            border: 1px solid var(--gris-satin);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all var(--transition-fast);
+            color: var(--blanc-creme);
+        }
+        
+        .quantity-btn-sombre:hover {
+            background: var(--or-sombre);
+            color: var(--noir-absolu);
+            border-color: var(--or-sombre);
+        }
+        
+        .cart-item-price-sombre, .wishlist-item-price-sombre {
+            font-weight: 700;
+            color: var(--or-sombre);
+        }
+        
+        .remove-item-sombre {
+            color: #ff6b6b;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: transform var(--transition-fast);
+            padding: 5px;
+        }
+        
+        .remove-item-sombre:hover {
+            transform: scale(1.2);
+            color: #ff5252;
+        }
+        
+        .cart-footer-sombre, .wishlist-footer-sombre {
+            padding: var(--space-md);
+            border-top: 1px solid var(--gris-anthracite);
+            background: rgba(10, 10, 10, 0.9);
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .cart-totals-sombre {
+            margin-bottom: var(--space-md);
+        }
+        
+        .cart-total-row-sombre {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            color: var(--gris-platine);
+        }
+        
+        .cart-total-final-sombre {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--gris-anthracite);
+            color: var(--blanc-creme);
+        }
+        
+        .whatsapp-order-sombre {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            background: linear-gradient(135deg, #25D366 0%, #1DA851 100%);
+            color: var(--noir-absolu);
+            border: none;
+            padding: 18px;
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+        }
+        
+        .whatsapp-order-sombre:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+        
+        .cart-empty-sombre, .wishlist-empty-sombre {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--gris-platine);
+        }
+        
+        .cart-empty-sombre i, .wishlist-empty-sombre i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--gris-anthracite);
+        }
+        
+        /* Backdrop Sombre */
+        .backdrop-sombre {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1500;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-normal);
+            backdrop-filter: blur(5px);
+        }
+        
+        .backdrop-sombre.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Toast Notification Sombre */
+        .toast-sombre {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, var(--noir-velours) 0%, var(--gris-anthracite) 100%);
+            color: var(--blanc-creme);
+            padding: 16px 24px;
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-eleve);
+            z-index: 3000;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all var(--transition-normal);
+            border: 1px solid var(--gris-anthracite);
+        }
+        
+        .toast-sombre.active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .toast-icon-sombre {
+            color: var(--or-sombre);
+            font-size: 1.2rem;
+        }
+        
+        /* Modal Aperçu Rapide */
+        .quickview-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            display: none;
+            opacity: 0;
+            transition: opacity var(--transition-normal);
+            backdrop-filter: blur(10px);
+        }
+        
+        .quickview-overlay.active {
+            display: block;
+            opacity: 1;
+        }
+        
+        .quickview-modal-sombre {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 900px;
+            max-height: 90vh;
+            background: linear-gradient(135deg, var(--noir-velours) 0%, var(--gris-anthracite) 100%);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+            box-shadow: var(--shadow-eleve);
+            border: 1px solid var(--gris-anthracite);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .quickview-header-sombre {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-md);
+            flex-shrink: 0;
+        }
+        
+        .quickview-title-sombre {
+            font-size: 1.4rem;
+            background: linear-gradient(135deg, var(--blanc-creme) 0%, var(--or-sombre) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .close-quickview {
+            background: rgba(42, 42, 42, 0.5);
+            border: 1px solid var(--gris-anthracite);
+            color: var(--gris-platine);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .close-quickview:hover {
+            color: var(--blanc-creme);
+            background: var(--gris-anthracite);
+            transform: rotate(90deg);
+        }
+        
+        .quickview-content-sombre {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-md);
+            flex: 1;
+            overflow-y: auto;
+        }
+        
+        .quickview-image-container-sombre {
+            height: 400px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            background: var(--noir-absolu);
+            border: 1px solid var(--gris-anthracite);
+        }
+        
+        .quickview-image-sombre {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .quickview-info-sombre {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+        
+        .quickview-category-sombre {
+            font-size: 0.8rem;
+            color: var(--or-sombre);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 500;
+        }
+        
+        .quickview-product-title-sombre {
+            font-size: 1.8rem;
+            color: var(--blanc-creme);
+            line-height: 1.2;
+        }
+        
+        .quickview-description-sombre {
+            color: var(--gris-platine);
+            line-height: 1.6;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .quickview-price-container-sombre {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .quickview-price-sombre {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--blanc-creme);
+        }
+        
+        .quickview-price-old-sombre {
+            font-size: 1.1rem;
+            color: var(--gris-platine);
+            text-decoration: line-through;
+        }
+        
+        .quickview-options-sombre {
+            margin-bottom: var(--space-sm);
+        }
+        
+        .quickview-option-title-sombre {
+            font-size: 0.9rem;
+            color: var(--gris-platine);
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .quickview-option-hint-sombre {
+            font-size: 0.8rem;
+            color: var(--or-sombre);
+            font-style: italic;
+        }
+        
+        .quickview-colors-sombre, .quickview-sizes-sombre {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .quickview-color-option-sombre {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid var(--gris-anthracite);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            position: relative;
+        }
+        
+        .quickview-color-option-sombre:hover, .quickview-color-option-sombre.selected {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(184, 154, 90, 0.5);
+        }
+        
+        .quickview-color-option-sombre.selected {
+            border-color: var(--or-sombre);
+        }
+        
+        .quickview-color-name-sombre {
+            position: absolute;
+            top: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--noir-absolu);
+            color: var(--blanc-creme);
+            padding: 5px 10px;
+            border-radius: var(--radius-sm);
+            font-size: 0.75rem;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-fast);
+            border: 1px solid var(--gris-anthracite);
+            z-index: 10;
+        }
+        
+        .quickview-color-option-sombre:hover .quickview-color-name-sombre {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(-2px);
+        }
+        
+        .quickview-size-option-sombre {
+            min-width: 40px;
+            height: 40px;
+            border-radius: var(--radius-sm);
+            background: var(--noir-velours);
+            border: 1px solid var(--gris-anthracite);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--gris-platine);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .quickview-size-option-sombre:hover, .quickview-size-option-sombre.selected {
+            background: var(--or-sombre);
+            color: var(--noir-absolu);
+            border-color: var(--or-sombre);
+            transform: translateY(-2px);
+        }
+        
+        .quickview-size-option-sombre.unavailable {
+            opacity: 0.4;
+            cursor: not-allowed;
+            text-decoration: line-through;
+        }
+        
+        .quickview-size-option-sombre.unavailable:hover {
+            background: var(--noir-velours);
+            color: var(--gris-platine);
+            border-color: var(--gris-anthracite);
+            transform: none;
+        }
+        
+        .quickview-actions-sombre {
+            display: flex;
+            gap: var(--space-sm);
+            margin-top: auto;
+        }
+        
+        .quickview-add-to-cart-sombre {
+            flex: 1;
+            background: linear-gradient(135deg, var(--or-sombre) 0%, var(--cuivre) 100%);
+            color: var(--noir-absolu);
+            border: none;
+            padding: 16px;
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .quickview-add-to-cart-sombre:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(184, 154, 90, 0.3);
+        }
+        
+        .quickview-add-to-wishlist-sombre {
+            width: 60px;
+            background: linear-gradient(135deg, var(--gris-anthracite) 0%, var(--noir-velours) 100%);
+            color: var(--blanc-creme);
+            border: 1px solid var(--gris-anthracite);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .quickview-add-to-wishlist-sombre:hover, .quickview-add-to-wishlist-sombre.favorited {
+            color: #ff6b6b;
+            border-color: #ff6b6b;
+            background: rgba(255, 107, 107, 0.1);
+        }
+        
+        /* Footer Sombre */
+        .footer-sombre {
+            background: linear-gradient(180deg, var(--noir-absolu) 0%, #080808 100%);
+            color: var(--blanc-creme);
+            padding: var(--space-xl) 0 var(--space-md);
+            border-top: 1px solid var(--gris-anthracite);
+        }
+        
+        .footer-grid-sombre {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-lg);
+            margin-bottom: var(--space-xl);
+        }
+        
+        .footer-col-title-sombre {
+            font-size: 1.1rem;
+            margin-bottom: var(--space-md);
+            position: relative;
+            padding-bottom: 10px;
+            color: var(--blanc-creme);
+        }
+        
+        .footer-col-title-sombre:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 1px;
+            background: linear-gradient(90deg, var(--or-sombre), transparent);
+        }
+        
+        .footer-links-sombre {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .footer-link-sombre {
+            color: var(--gris-platine);
+            font-size: 0.9rem;
+            transition: all var(--transition-fast);
+        }
+        
+        .footer-link-sombre:hover {
+            color: var(--or-sombre);
+            transform: translateX(5px);
+        }
+        
+        .footer-bottom-sombre {
+            text-align: center;
+            padding-top: var(--space-md);
+            border-top: 1px solid var(--gris-anthracite);
+            color: var(--gris-platine);
+            font-size: 0.85rem;
+        }
+        
+        /* Animations */
+        @keyframes slideInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .hero-title-sombre {
+                font-size: 3.2rem;
+            }
+            
+            .categories-grid-sombre {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .quickview-content-sombre {
+                grid-template-columns: 1fr;
+                gap: var(--space-sm);
+            }
+            
+            .quickview-image-container-sombre {
+                height: 300px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .hero-content-sombre {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-title-sombre:after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .footer-grid-sombre {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .nav-menu-sombre {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section-title-sombre {
+                font-size: 2.2rem;
+            }
+            
+            .categories-grid-sombre {
+                grid-template-columns: 1fr;
+            }
+            
+            .products-grid-sombre {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .hero-title-sombre {
+                font-size: 2.5rem;
+            }
+            
+            .hero-image-sombre {
+                height: 400px;
+            }
+            
+            .quickview-modal-sombre {
+                width: 95%;
+                padding: var(--space-sm);
+            }
+            
+            .quickview-actions-sombre {
+                flex-direction: column;
+            }
+            
+            .quickview-add-to-wishlist-sombre {
+                width: 100%;
+                height: 50px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-title-sombre {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: var(--space-lg) 0;
+            }
+            
+            .products-grid-sombre {
+                grid-template-columns: 1fr;
+            }
+            
+            .filters-sombre {
+                gap: 8px;
+            }
+            
+            .filter-btn-sombre {
+                padding: 8px 16px;
+                font-size: 0.8rem;
+            }
+            
+            .cart-sidebar-sombre, .wishlist-sidebar-sombre {
+                max-width: 100%;
+            }
+        }
+        
+        /* Classes Utilitaires */
+        .hidden-sombre {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all var(--transition-normal);
+        }
+        
+        .visible-sombre {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .wishlist-active {
+            color: #ff6b6b !important;
+        }
+        
+        .default-selection {
+            font-style: italic;
+            color: var(--or-sombre);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Sombre Élégant -->
+    <header class="header-sombre">
+        <div class="container">
+            <nav class="nav-sombre">
+                <a href="#" class="logo-sombre">ÉDITION NOIRE</a>
+                <ul class="nav-menu-sombre">
+                    <li><a href="#home" class="nav-link-sombre">Accueil</a></li>
+                    <li><a href="#categories" class="nav-link-sombre">Collections</a></li>
+                    <li><a href="#products" class="nav-link-sombre">Boutique</a></li>
+                    <li><a href="#" class="nav-link-sombre">Éditorial</a></li>
+                </ul>
+                <div class="nav-actions-sombre">
+                    <div class="nav-icon-sombre search-icon" id="searchIcon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="nav-icon-sombre wishlist-icon-sombre" id="wishlistIconSombre">
+                        <i class="far fa-heart"></i>
+                        <span class="wishlist-count-sombre" id="wishlistCountSombre">0</span>
+                    </div>
+                    <div class="nav-icon-sombre cart-icon-sombre" id="cartIconSombre">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count-sombre" id="cartCountSombre">0</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Overlay de recherche -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-modal">
+            <div class="search-header">
+                <h3 class="search-title">Rechercher un produit</h3>
+                <button class="close-search" id="closeSearch">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-input-container">
+                <i class="fas fa-search search-icon-input"></i>
+                <input type="text" class="search-input" id="searchInput" placeholder="Rechercher un produit, une catégorie...">
+            </div>
+            <div class="search-results" id="searchResults">
+                <!-- Les résultats de recherche apparaîtront ici -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Overlay d'aperçu rapide -->
+    <div class="quickview-overlay" id="quickviewOverlay">
+        <div class="quickview-modal-sombre">
+            <div class="quickview-header-sombre">
+                <h3 class="quickview-title-sombre">Aperçu rapide</h3>
+                <button class="close-quickview" id="closeQuickview">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="quickview-content-sombre" id="quickviewContent">
+                <!-- Contenu de l'aperçu rapide -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Backdrop pour le panier et wishlist -->
+    <div class="backdrop-sombre" id="backdropSombre"></div>
+    
+    <!-- Toast Notification -->
+    <div class="toast-sombre" id="toastSombre">
+        <i class="fas fa-check-circle toast-icon-sombre"></i>
+        <span id="toastMessageSombre">Produit ajouté au panier</span>
+    </div>
+    
+    <!-- Panier Sidebar -->
+    <div class="cart-sidebar-sombre" id="cartSidebarSombre">
+        <div class="cart-header-sombre">
+            <h3 class="cart-title-sombre">Votre Sélection</h3>
+            <button class="close-cart-sombre" id="closeCartSombre">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items-sombre" id="cartItemsSombre">
+            <div class="cart-empty-sombre" id="emptyCartSombre">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Votre panier est vide</p>
+            </div>
+        </div>
+        <div class="cart-footer-sombre">
+            <div class="cart-totals-sombre">
+                <div class="cart-total-row-sombre">
+                    <span>Sous-total</span>
+                    <span id="cartSubtotalSombre">€0.00</span>
+                </div>
+                <div class="cart-total-row-sombre">
+                    <span>Livraison</span>
+                    <span>Gratuite</span>
+                </div>
+                <div class="cart-total-row-sombre cart-total-final-sombre">
+                    <span>Total</span>
+                    <span id="cartTotalSombre">€0.00</span>
+                </div>
+            </div>
+            <button class="whatsapp-order-sombre" id="whatsappOrderSombre">
+                <i class="fab fa-whatsapp"></i>
+                Commander via WhatsApp
+            </button>
+        </div>
+    </div>
+    
+    <!-- Wishlist Sidebar -->
+    <div class="wishlist-sidebar-sombre" id="wishlistSidebarSombre">
+        <div class="wishlist-header-sombre">
+            <h3 class="wishlist-title-sombre">Vos Coups de Cœur</h3>
+            <button class="close-wishlist-sombre" id="closeWishlistSombre">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="wishlist-items-sombre" id="wishlistItemsSombre">
+            <div class="wishlist-empty-sombre" id="emptyWishlistSombre">
+                <i class="far fa-heart"></i>
+                <p>Vos favoris sont vides</p>
+                <p style="font-size: 0.9rem; margin-top: 10px; color: var(--gris-platine)">
+                    Ajoutez des produits en cliquant sur l'icône cœur
+                </p>
+            </div>
+        </div>
+        <div class="wishlist-footer-sombre">
+            <button class="add-to-cart-sombre" id="wishlistToCartSombre" style="width: 100%;">
+                <i class="fas fa-shopping-bag"></i>
+                Ajouter tous au panier
+            </button>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero-sombre" id="home">
+        <div class="container">
+            <div class="hero-content-sombre">
+                <div class="hero-text-container-sombre">
+                    <h1 class="hero-title-sombre">Élégance Noire, Style Intemporel</h1>
+                    <p class="hero-subtitle-sombre">Découvrez notre collection capsule de 290 pièces exclusives, où le minimalisme rencontre le luxe dans une palette sombre et raffinée.</p>
+                    <a href="#products" class="hero-cta-sombre">
+                        <span>Explorer la collection</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero-image-container-sombre">
+                    <div class="hero-image-sombre">
+                        <div class="hero-badge-sombre">Collection Automne-Hiver</div>
+                        <img src="https://images.unsplash.com/photo-1696086152586-09a0855dbc9c?q=80&w=580&auto=format&fit=crop" alt="Collection Édition Noire" class="product-image-sombre" style="object-position: center 30%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Catégories Section -->
+    <section class="section" id="categories">
+        <div class="container">
+            <h2 class="section-title-sombre">Nos Collections</h2>
+            <div class="categories-grid-sombre">
+                <div class="category-card-sombre hidden-sombre">
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=870&auto=format&fit=crop" alt="Collection Femme" class="category-image-sombre">
+                    <div class="category-overlay-sombre">
+                        <h3 class="category-title-sombre">Femme</h3>
+                        <div class="category-count-sombre">125 articles exclusifs</div>
+                    </div>
+                </div>
+                <div class="category-card-sombre hidden-sombre">
+                    <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=774&auto=format&fit=crop" alt="Collection Homme" class="category-image-sombre">
+                    <div class="category-overlay-sombre">
+                        <h3 class="category-title-sombre">Homme</h3>
+                        <div class="category-count-sombre">98 pièces uniques</div>
+                    </div>
+                </div>
+                <div class="category-card-sombre hidden-sombre">
+                    <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?q=80&w=870&auto=format&fit=crop" alt="Collection Enfant" class="category-image-sombre">
+                    <div class="category-overlay-sombre">
+                        <h3 class="category-title-sombre">Enfant</h3>
+                        <div class="category-count-sombre">67 créations raffinées</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Produits Section -->
+    <section class="section" id="products">
+        <div class="container">
+            <h2 class="section-title-sombre">Notre Sélection</h2>
+            
+            <!-- Filtres -->
+            <div class="filters-sombre">
+                <button class="filter-btn-sombre active" data-filter="all">Tous</button>
+                <button class="filter-btn-sombre" data-filter="femme">Femme</button>
+                <button class="filter-btn-sombre" data-filter="homme">Homme</button>
+                <button class="filter-btn-sombre" data-filter="enfant">Enfant</button>
+                <button class="filter-btn-sombre" data-filter="new">Nouveautés</button>
+                <button class="filter-btn-sombre" data-filter="sale">Promotions</button>
+            </div>
+            
+            <!-- Grille de produits -->
+            <div class="products-grid-sombre" id="productsGridSombre">
+                <!-- Les produits seront chargés dynamiquement -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Sombre -->
+    <footer class="footer-sombre">
+        <div class="container">
+            <div class="footer-grid-sombre">
+                <div class="footer-col">
+                    <div class="footer-col-title-sombre">ÉDITION NOIRE</div>
+                    <p style="color: var(--gris-platine); margin-bottom: 20px; font-size: 0.9rem; line-height: 1.6;">
+                        Une vision sombre et raffinée de la mode. Chaque pièce est une déclaration d'élégance intemporelle.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-title-sombre">Boutique</div>
+                    <div class="footer-links-sombre">
+                        <a href="#products" class="footer-link-sombre">Nouveautés</a>
+                        <a href="#" class="footer-link-sombre">Femme</a>
+                        <a href="#" class="footer-link-sombre">Homme</a>
+                        <a href="#" class="footer-link-sombre">Enfant</a>
+                        <a href="#" class="footer-link-sombre">Collections Capsule</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-title-sombre">Informations</div>
+                    <div class="footer-links-sombre">
+                        <a href="#" class="footer-link-sombre">Livraison</a>
+                        <a href="#" class="footer-link-sombre">Retours & Échanges</a>
+                        <a href="#" class="footer-link-sombre">Guide des tailles</a>
+                        <a href="#" class="footer-link-sombre">Contact</a>
+                        <a href="#" class="footer-link-sombre">FAQ</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-title-sombre">Contact</div>
+                    <div class="footer-links-sombre">
+                        <a href="mailto:contact@editionnoire.com" class="footer-link-sombre">contact@editionnoire.com</a>
+                        <a href="tel:+33123456789" class="footer-link-sombre">+33 1 23 45 67 89</a>
+                        <a href="#" class="footer-link-sombre">123 Avenue Montaigne, 75008 Paris</a>
+                        <div style="margin-top: 15px; display: flex; gap: 15px;">
+                            <a href="#" class="footer-link-sombre" style="font-size: 1.1rem;"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="footer-link-sombre" style="font-size: 1.1rem;"><i class="fab fa-pinterest"></i></a>
+                            <a href="#" class="footer-link-sombre" style="font-size: 1.1rem;"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-sombre">
+                <p>&copy; 2023 Édition Noire. Tous droits réservés. | Boutique de vêtements premium sombre</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script>
+        // Données des produits avec images Unsplash
+        const productsSombre = [
+            {
+                id: 1,
+                name: "Blazer Structuré Noir",
+                description: "Blazer en laine mérinos avec coupe architecturale et épaulettes structurées. Coupe ajustée pour une silhouette élégante et moderne.",
+                category: "femme",
+                price: 349.99,
+                oldPrice: null,
+                badge: "NOUVEAU",
+                colors: [
+                    {code: "#0a0a0a", name: "Noir Absolu"},
+                    {code: "#2a2a2a", name: "Anthracite"},
+                    {code: "#3a3a3a", name: "Gris Satin"}
+                ],
+                sizes: ["XS", "S", "M", "L", "XL"],
+                unavailableSizes: [],
+                image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=774&auto=format&fit=crop"
+            },
+            {
+                id: 2,
+                name: "Robe Soirée Longue",
+                description: "Robe en satin avec détails métalliques et fente latérale élégante. Parfaite pour les occasions spéciales.",
+                category: "femme",
+                price: 489.99,
+                oldPrice: 589.99,
+                badge: "-20%",
+                colors: [
+                    {code: "#0a0a0a", name: "Noir Absolu"},
+                    {code: "#b89a5a", name: "Or Sombre"},
+                    {code: "#f5f3f0", name: "Blanc Crème"}
+                ],
+                sizes: ["XS", "S", "M", "L"],
+                unavailableSizes: ["XL"],
+                image: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?q=80&w=774&auto=format&fit=crop"
+            },
+            {
+                id: 3,
+                name: "Costume Sur Mesure Anthracite",
+                description: "Costume deux pièces en laine premium avec finitions main. Coupe moderne et élégante pour un style irréprochable.",
+                category: "homme",
+                price: 799.99,
+                oldPrice: null,
+                badge: "EXCLUSIF",
+                colors: [
+                    {code: "#2a2a2a", name: "Anthracite"},
+                    {code: "#3a3a3a", name: "Gris Satin"},
+                    {code: "#1a1a1a", name: "Noir Velours"}
+                ],
+                sizes: ["S", "M", "L", "XL", "XXL"],
+                unavailableSizes: ["XS"],
+                image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=776&auto=format&fit=crop"
+            },
+            {
+                id: 4,
+                name: "Pull Cashmere Écru",
+                description: "Pull col roulé en cashmere pur, ultra doux et chaud. Parfait pour les journées d'hiver élégantes.",
+                category: "homme",
+                price: 279.99,
+                oldPrice: 329.99,
+                badge: "-20%",
+                colors: [
+                    {code: "#f5f3f0", name: "Blanc Crème"},
+                    {code: "#8a8a8a", name: "Gris Platine"},
+                    {code: "#b89a5a", name: "Or Sombre"}
+                ],
+                sizes: ["S", "M", "L", "XL"],
+                unavailableSizes: ["XS", "XXL"],
+                image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1064&auto=format&fit=crop"
+            },
+            {
+                id: 5,
+                name: "Manteau Enfant Laine",
+                description: "Manteau en laine vierge avec col en fourrure synthétique. Chaud et stylé pour les petits fashionistas.",
+                category: "enfant",
+                price: 149.99,
+                oldPrice: null,
+                badge: "NOUVEAU",
+                colors: [
+                    {code: "#0a0a0a", name: "Noir Absolu"},
+                    {code: "#2a5caa", name: "Bleu Marine"},
+                    {code: "#b87333", name: "Cuivre"}
+                ],
+                sizes: ["3-4 ans", "5-6 ans", "7-8 ans", "9-10 ans"],
+                unavailableSizes: ["11-12 ans"],
+                image: "https://images.unsplash.com/photo-1558769132-cb1c458e4222?q=80&w=1480&auto=format&fit=crop"
+            },
+            {
+                id: 6,
+                name: "Ensemble Sport Technique",
+                description: "Survêtement performance avec finitions premium et détails réfléchissants. Confort et style pour les activités.",
+                category: "enfant",
+                price: 99.99,
+                oldPrice: null,
+                badge: null,
+                colors: [
+                    {code: "#1a1a1a", name: "Noir Velours"},
+                    {code: "#2a2a2a", name: "Anthracite"},
+                    {code: "#3a3a3a", name: "Gris Satin"}
+                ],
+                sizes: ["5-6 ans", "7-8 ans", "9-10 ans", "11-12 ans"],
+                unavailableSizes: ["3-4 ans"],
+                image: "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?q=80&w=1479&auto=format&fit=crop"
+            },
+            {
+                id: 7,
+                name: "Chemise Soie Satinée",
+                description: "Chemise en soie sauvage avec boutons cachés et col contrasté. Élégance et fluidité pour un look raffiné.",
+                category: "femme",
+                price: 219.99,
+                oldPrice: null,
+                badge: "EXCLUSIF",
+                colors: [
+                    {code: "#0a0a0a", name: "Noir Absolu"},
+                    {code: "#f5f3f0", name: "Blanc Crème"},
+                    {code: "#3a3a3a", name: "Gris Satin"}
+                ],
+                sizes: ["XS", "S", "M", "L"],
+                unavailableSizes: ["XL"],
+                image: "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?q=80&w=987&auto=format&fit=crop"
+            },
+            {
+                id: 8,
+                name: "Pantalon Tailleur Large",
+                description: "Pantalon wide-leg en laine et soie avec taille haute et plis structurés. Silhouette élégante et moderne.",
+                category: "femme",
+                price: 189.99,
+                oldPrice: null,
+                badge: null,
+                colors: [
+                    {code: "#2a2a2a", name: "Anthracite"},
+                    {code: "#3a3a3a", name: "Gris Satin"},
+                    {code: "#0a0a0a", name: "Noir Absolu"}
+                ],
+                sizes: ["XS", "S", "M", "L", "XL"],
+                unavailableSizes: [],
+                image: "https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=1470&auto=format&fit=crop"
+            },
+            {
+                id: 9,
+                name: "Chaussures Cuir Verni",
+                description: "Derbies en cuir pleine fleur verni avec semelle en cuir. Élégance intemporelle pour un style sophistiqué.",
+                category: "homme",
+                price: 379.99,
+                oldPrice: null,
+                badge: "NOUVEAU",
+                colors: [
+                    {code: "#0a0a0a", name: "Noir Absolu"},
+                    {code: "#1a1a1a", name: "Noir Velours"},
+                    {code: "#2a2a2a", name: "Anthracite"}
+                ],
+                sizes: ["40", "41", "42", "43", "44", "45"],
+                unavailableSizes: ["39", "46"],
+                image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1112&auto=format&fit=crop"
+            },
+            {
+                id: 10,
+                name: "Sac Main Cuir Texturé",
+                description: "Sac à main en cuir grainé avec fermoir doré et compartiment intérieur organisé. Élégance pratique pour toutes les occasions.",
+                category: "femme",
+                price: 429.99,
+                oldPrice: 499.99,
+                badge: "-20%",
+                colors: [
+                    {code: "#b89a5a", name: "Or Sombre"},
+                    {code: "#0a0a0a", name: "Noir Absolu"},
+                    {code: "#b87333", name: "Cuivre"}
+                ],
+                sizes: ["Unique"],
+                unavailableSizes: [],
+                image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=1035&auto=format&fit=crop"
+            },
+            {
+                id: 11,
+                name: "Parka Technique Imperméable",
+                description: "Parka avec membrane technique et capuche amovible. Protection optimale contre les intempéries avec style urbain.",
+                category: "homme",
+                price: 459.99,
+                oldPrice: null,
+                badge: null,
+                colors: [
+                    {code: "#0a0a0a", name: "Noir Absolu"},
+                    {code: "#2a5caa", name: "Bleu Marine"},
+                    {code: "#3a3a3a", name: "Gris Satin"}
+                ],
+                sizes: ["S", "M", "L", "XL", "XXL"],
+                unavailableSizes: ["XS"],
+                image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=1035&auto=format&fit=crop"
+            },
+            {
+                id: 12,
+                name: "Robe Enfant Velours",
+                description: "Robe en velours côtelé avec col dentelle et ceinture satin. Charmante et élégante pour les occasions spéciales.",
+                category: "enfant",
+                price: 89.99,
+                oldPrice: 109.99,
+                badge: "-20%",
+                colors: [
+                    {code: "#f5f3f0", name: "Blanc Crème"},
+                    {code: "#b89a5a", name: "Or Sombre"},
+                    {code: "#d973ad", name: "Rose Poudré"}
+                ],
+                sizes: ["3-4 ans", "5-6 ans", "7-8 ans"],
+                unavailableSizes: ["9-10 ans", "11-12 ans"],
+                image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=986&auto=format&fit=crop"
+            }
+        ];
+
+        // Panier et Wishlist
+        let cartSombre = [];
+        let wishlistSombre = JSON.parse(localStorage.getItem('wishlistSombre')) || [];
+        let activeFilterSombre = "all";
+        
+        // Variables pour les sélections actuelles
+        let currentSelectedColor = null;
+        let currentSelectedSize = null;
+        let currentProductId = null;
+        
+        // DOM Elements
+        const cartIconSombre = document.getElementById('cartIconSombre');
+        const cartCountSombre = document.getElementById('cartCountSombre');
+        const cartSidebarSombre = document.getElementById('cartSidebarSombre');
+        const closeCartSombre = document.getElementById('closeCartSombre');
+        const backdropSombre = document.getElementById('backdropSombre');
+        const cartItemsSombre = document.getElementById('cartItemsSombre');
+        const emptyCartSombre = document.getElementById('emptyCartSombre');
+        const cartTotalSombre = document.getElementById('cartTotalSombre');
+        const cartSubtotalSombre = document.getElementById('cartSubtotalSombre');
+        const whatsappOrderSombre = document.getElementById('whatsappOrderSombre');
+        const productsGridSombre = document.getElementById('productsGridSombre');
+        const filterButtonsSombre = document.querySelectorAll('.filter-btn-sombre');
+        const toastSombre = document.getElementById('toastSombre');
+        const toastMessageSombre = document.getElementById('toastMessageSombre');
+        
+        // Wishlist elements
+        const wishlistIconSombre = document.getElementById('wishlistIconSombre');
+        const wishlistCountSombre = document.getElementById('wishlistCountSombre');
+        const wishlistSidebarSombre = document.getElementById('wishlistSidebarSombre');
+        const closeWishlistSombre = document.getElementById('closeWishlistSombre');
+        const wishlistItemsSombre = document.getElementById('wishlistItemsSombre');
+        const emptyWishlistSombre = document.getElementById('emptyWishlistSombre');
+        const wishlistToCartSombre = document.getElementById('wishlistToCartSombre');
+        
+        // Éléments de recherche
+        const searchIcon = document.getElementById('searchIcon');
+        const searchOverlay = document.getElementById('searchOverlay');
+        const closeSearch = document.getElementById('closeSearch');
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.getElementById('searchResults');
+        
+        // Éléments d'aperçu rapide
+        const quickviewOverlay = document.getElementById('quickviewOverlay');
+        const closeQuickview = document.getElementById('closeQuickview');
+        const quickviewContent = document.getElementById('quickviewContent');
+        
+        // Initialisation
+        document.addEventListener('DOMContentLoaded', function() {
+            renderProductsSombre();
+            updateCartCountSombre();
+            updateWishlistCountSombre();
+            setupEventListenersSombre();
+            setupScrollAnimationsSombre();
+            setupHeaderScrollSombre();
+            
+            // Précharger les images pour de meilleures performances
+            preloadImages();
+        });
+        
+        // Précharger les images
+        function preloadImages() {
+            const images = [
+                'https://images.unsplash.com/photo-1696086152586-09a0855dbc9c?q=80&w=580&auto=format&fit=crop',
+                'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=870&auto=format&fit=crop',
+                'https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=774&auto=format&fit=crop',
+                'https://images.unsplash.com/photo-1530549387789-4c1017266635?q=80&w=870&auto=format&fit=crop'
+            ];
+            
+            productsSombre.forEach(product => {
+                images.push(product.image);
+            });
+            
+            images.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+        }
+        
+        // Rendu des produits
+        function renderProductsSombre() {
+            productsGridSombre.innerHTML = '';
+            
+            const filteredProducts = productsSombre.filter(product => {
+                if (activeFilterSombre === "all") return true;
+                if (activeFilterSombre === "new") return product.badge === "NOUVEAU";
+                if (activeFilterSombre === "sale") return product.oldPrice !== null;
+                return product.category === activeFilterSombre;
+            });
+            
+            filteredProducts.forEach((product, index) => {
+                const isInWishlist = wishlistSombre.some(item => item.id === product.id);
+                const productCard = document.createElement('div');
+                productCard.className = `product-card-sombre hidden-sombre ${product.category}`;
+                productCard.dataset.category = product.category;
+                productCard.dataset.new = product.badge === "NOUVEAU" ? "true" : "false";
+                productCard.dataset.sale = product.oldPrice !== null ? "true" : "false";
+                
+                productCard.innerHTML = `
+                    <div class="product-image-container-sombre">
+                        <div class="product-badges-sombre">
+                            ${product.badge ? 
+                                `<div class="product-badge-sombre ${product.badge === 'NOUVEAU' ? 'badge-new-sombre' : product.badge === '-20%' ? 'badge-sale-sombre' : 'badge-exclusive-sombre'}">${product.badge}</div>` 
+                                : ''}
+                        </div>
+                        <div class="product-actions-sombre">
+                            <button class="action-btn-sombre quickview-btn" title="Aperçu rapide" data-id="${product.id}">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn-sombre wishlist-btn ${isInWishlist ? 'favorited' : ''}" title="${isInWishlist ? 'Retirer des favoris' : 'Ajouter aux favoris'}" data-id="${product.id}">
+                                <i class="${isInWishlist ? 'fas' : 'far'} fa-heart"></i>
+                            </button>
+                        </div>
+                        <img src="${product.image}" alt="${product.name}" class="product-image-sombre" loading="lazy">
+                    </div>
+                    <div class="product-info-sombre">
+                        <div class="product-category-sombre">${product.category.charAt(0).toUpperCase() + product.category.slice(1)}</div>
+                        <h3 class="product-title-sombre">${product.name}</h3>
+                        <p style="color: var(--gris-platine); font-size: 0.85rem; margin-bottom: 15px; line-height: 1.5;">${product.description}</p>
+                        <div class="product-price-container-sombre">
+                            <div class="product-price-sombre">€${product.price.toFixed(2)}</div>
+                            ${product.oldPrice ? `<div class="product-price-old-sombre">€${product.oldPrice.toFixed(2)}</div>` : ''}
+                        </div>
+                        
+                        <div class="product-options-sombre">
+                            <div class="option-title-sombre">
+                                <span>Couleur</span>
+                                <span class="option-hint-sombre">Optionnel</span>
+                            </div>
+                            <div class="product-colors-sombre">
+                                ${product.colors.map((color, colorIndex) => 
+                                    `<div class="color-option-sombre ${colorIndex === 0 ? 'selected' : ''}" 
+                                          style="background-color: ${color.code};" 
+                                          title="${color.name}"
+                                          data-color="${color.code}"
+                                          data-color-name="${color.name}">
+                                        <span class="color-name-sombre">${color.name}</span>
+                                    </div>`
+                                ).join('')}
+                            </div>
+                            
+                            <div class="option-title-sombre">
+                                <span>Taille</span>
+                                <span class="option-hint-sombre">Optionnel</span>
+                            </div>
+                            <div class="product-sizes-sombre">
+                                ${product.sizes.map(size => 
+                                    `<div class="size-option-sombre ${product.unavailableSizes.includes(size) ? 'unavailable' : ''}" 
+                                          data-size="${size}">
+                                        ${size}
+                                    </div>`
+                                ).join('')}
+                            </div>
+                        </div>
+                        
+                        <button class="add-to-cart-sombre" data-id="${product.id}">
+                            <i class="fas fa-shopping-bag"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+                `;
+                
+                productsGridSombre.appendChild(productCard);
+                
+                // Animation d'apparition
+                setTimeout(() => {
+                    productCard.classList.add('visible-sombre');
+                }, index * 100);
+                
+                // Gestionnaire d'événement pour ajouter au panier
+                const addButton = productCard.querySelector('.add-to-cart-sombre');
+                addButton.addEventListener('click', (e) => {
+                    const card = e.target.closest('.product-card-sombre');
+                    const colorOption = card.querySelector('.color-option-sombre.selected');
+                    const sizeOption = card.querySelector('.size-option-sombre.selected:not(.unavailable)');
+                    
+                    const selectedColor = colorOption ? {
+                        code: colorOption.dataset.color,
+                        name: colorOption.dataset.colorName
+                    } : null;
+                    
+                    const selectedSize = sizeOption ? sizeOption.dataset.size : null;
+                    
+                    addToCartSombre(product.id, selectedColor, selectedSize);
+                });
+                
+                // Gestionnaire pour l'aperçu rapide
+                const quickviewBtn = productCard.querySelector('.quickview-btn');
+                quickviewBtn.addEventListener('click', () => openQuickview(product.id));
+                
+                // Gestionnaire pour la wishlist
+                const wishlistBtn = productCard.querySelector('.wishlist-btn');
+                wishlistBtn.addEventListener('click', () => toggleWishlist(product.id));
+                
+                // Gestionnaires pour la sélection des couleurs
+                const colorOptions = productCard.querySelectorAll('.color-option-sombre');
+                colorOptions.forEach(option => {
+                    option.addEventListener('click', () => {
+                        colorOptions.forEach(opt => opt.classList.remove('selected'));
+                        option.classList.add('selected');
+                    });
+                });
+                
+                // Gestionnaires pour la sélection des tailles
+                const sizeOptions = productCard.querySelectorAll('.size-option-sombre:not(.unavailable)');
+                sizeOptions.forEach(option => {
+                    option.addEventListener('click', () => {
+                        sizeOptions.forEach(opt => opt.classList.remove('selected'));
+                        option.classList.add('selected');
+                    });
+                });
+            });
+        }
+        
+        // Fonction de recherche
+        function performSearch(query) {
+            if (!query.trim()) {
+                searchResults.innerHTML = '<div class="no-results">Entrez un terme de recherche</div>';
+                return;
+            }
+            
+            const searchTerm = query.toLowerCase().trim();
+            const results = productsSombre.filter(product => {
+                return product.name.toLowerCase().includes(searchTerm) ||
+                       product.description.toLowerCase().includes(searchTerm) ||
+                       product.category.toLowerCase().includes(searchTerm) ||
+                       product.badge?.toLowerCase().includes(searchTerm);
+            });
+            
+            displaySearchResults(results);
+        }
+        
+        // Afficher les résultats de recherche
+        function displaySearchResults(results) {
+            searchResults.innerHTML = '';
+            
+            if (results.length === 0) {
+                searchResults.innerHTML = '<div class="no-results">Aucun produit trouvé pour votre recherche</div>';
+                return;
+            }
+            
+            results.forEach(product => {
+                const resultItem = document.createElement('div');
+                resultItem.className = 'search-result-item';
+                resultItem.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}" class="search-result-image">
+                    <div class="search-result-info">
+                        <div class="search-result-name">${product.name}</div>
+                        <div class="search-result-category">${product.category.charAt(0).toUpperCase() + product.category.slice(1)}</div>
+                    </div>
+                    <div class="search-result-price">€${product.price.toFixed(2)}</div>
+                `;
+                
+                resultItem.addEventListener('click', () => {
+                    // Fermer la recherche
+                    closeSearchModal();
+                    // Ajouter au panier
+                    addToCartSombre(product.id);
+                    // Faire défiler jusqu'à la section produits
+                    document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+                });
+                
+                searchResults.appendChild(resultItem);
+            });
+        }
+        
+        // Ouvrir le modal de recherche
+        function openSearchModal() {
+            searchOverlay.classList.add('active');
+            searchInput.focus();
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // Fermer le modal de recherche
+        function closeSearchModal() {
+            searchOverlay.classList.remove('active');
+            searchInput.value = '';
+            searchResults.innerHTML = '';
+            document.body.style.overflow = '';
+        }
+        
+        // Ouvrir l'aperçu rapide
+        function openQuickview(productId) {
+            const product = productsSombre.find(p => p.id === productId);
+            const isInWishlist = wishlistSombre.some(item => item.id === productId);
+            
+            currentProductId = productId;
+            currentSelectedColor = product.colors[0];
+            currentSelectedSize = product.sizes.find(size => !product.unavailableSizes.includes(size)) || product.sizes[0];
+            
+            quickviewContent.innerHTML = `
+                <div class="quickview-image-container-sombre">
+                    <img src="${product.image}" alt="${product.name}" class="quickview-image-sombre">
+                </div>
+                <div class="quickview-info-sombre">
+                    <div class="quickview-category-sombre">${product.category.charAt(0).toUpperCase() + product.category.slice(1)}</div>
+                    <h2 class="quickview-product-title-sombre">${product.name}</h2>
+                    <p class="quickview-description-sombre">${product.description}</p>
+                    
+                    <div class="quickview-price-container-sombre">
+                        <div class="quickview-price-sombre">€${product.price.toFixed(2)}</div>
+                        ${product.oldPrice ? `<div class="quickview-price-old-sombre">€${product.oldPrice.toFixed(2)}</div>` : ''}
+                    </div>
+                    
+                    <div class="quickview-options-sombre">
+                        <div class="quickview-option-title-sombre">
+                            <span>Couleur</span>
+                            <span class="quickview-option-hint-sombre">Optionnel - ${currentSelectedColor.name} sélectionné</span>
+                        </div>
+                        <div class="quickview-colors-sombre">
+                            ${product.colors.map(color => 
+                                `<div class="quickview-color-option-sombre ${color.code === currentSelectedColor.code ? 'selected' : ''}" 
+                                      style="background-color: ${color.code};" 
+                                      title="${color.name}"
+                                      data-color='${JSON.stringify(color)}'>
+                                    <span class="quickview-color-name-sombre">${color.name}</span>
+                                </div>`
+                            ).join('')}
+                        </div>
+                        
+                        <div class="quickview-option-title-sombre">
+                            <span>Taille</span>
+                            <span class="quickview-option-hint-sombre">Optionnel - ${currentSelectedSize} sélectionné</span>
+                        </div>
+                        <div class="quickview-sizes-sombre">
+                            ${product.sizes.map(size => 
+                                `<div class="quickview-size-option-sombre ${product.unavailableSizes.includes(size) ? 'unavailable' : ''} ${size === currentSelectedSize ? 'selected' : ''}" 
+                                      data-size="${size}">
+                                    ${size}
+                                </div>`
+                            ).join('')}
+                        </div>
+                    </div>
+                    
+                    <div class="quickview-actions-sombre">
+                        <button class="quickview-add-to-cart-sombre" id="quickviewAddToCart">
+                            <i class="fas fa-shopping-bag"></i>
+                            Ajouter au panier
+                        </button>
+                        <button class="quickview-add-to-wishlist-sombre ${isInWishlist ? 'favorited' : ''}" id="quickviewWishlistBtn">
+                            <i class="${isInWishlist ? 'fas' : 'far'} fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            quickviewOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            
+            // Gestionnaires d'événements pour les boutons du modal
+            const addToCartBtn = quickviewContent.querySelector('#quickviewAddToCart');
+            addToCartBtn.addEventListener('click', () => {
+                addToCartSombre(productId, currentSelectedColor, currentSelectedSize);
+                showToastSombre("Produit ajouté au panier");
+            });
+            
+            const wishlistBtn = quickviewContent.querySelector('#quickviewWishlistBtn');
+            wishlistBtn.addEventListener('click', () => {
+                toggleWishlist(productId);
+                const isNowInWishlist = wishlistSombre.some(item => item.id === productId);
+                wishlistBtn.classList.toggle('favorited', isNowInWishlist);
+                wishlistBtn.innerHTML = `<i class="${isNowInWishlist ? 'fas' : 'far'} fa-heart"></i>`;
+                showToastSombre(isNowInWishlist ? "Ajouté aux favoris" : "Retiré des favoris");
+            });
+            
+            // Gestionnaires pour la sélection des couleurs
+            const colorOptions = quickviewContent.querySelectorAll('.quickview-color-option-sombre');
+            colorOptions.forEach(option => {
+                option.addEventListener('click', () => {
+                    colorOptions.forEach(opt => opt.classList.remove('selected'));
+                    option.classList.add('selected');
+                    currentSelectedColor = JSON.parse(option.dataset.color);
+                    
+                    // Mettre à jour l'indication de couleur sélectionnée
+                    const hint = quickviewContent.querySelector('.quickview-option-hint-sombre');
+                    hint.textContent = `Optionnel - ${currentSelectedColor.name} sélectionné`;
+                });
+            });
+            
+            // Gestionnaires pour la sélection des tailles
+            const sizeOptions = quickviewContent.querySelectorAll('.quickview-size-option-sombre:not(.unavailable)');
+            sizeOptions.forEach(option => {
+                option.addEventListener('click', () => {
+                    sizeOptions.forEach(opt => opt.classList.remove('selected'));
+                    option.classList.add('selected');
+                    currentSelectedSize = option.dataset.size;
+                    
+                    // Mettre à jour l'indication de taille sélectionnée
+                    const hints = quickviewContent.querySelectorAll('.quickview-option-hint-sombre');
+                    if (hints.length > 1) {
+                        hints[1].textContent = `Optionnel - ${currentSelectedSize} sélectionné`;
+                    }
+                });
+            });
+        }
+        
+        // Fermer l'aperçu rapide
+        function closeQuickviewModal() {
+            quickviewOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            currentSelectedColor = null;
+            currentSelectedSize = null;
+            currentProductId = null;
+        }
+        
+        // Ajouter au panier avec options
+        function addToCartSombre(productId, selectedColor = null, selectedSize = null) {
+            const product = productsSombre.find(p => p.id === productId);
+            
+            // Utiliser des valeurs par défaut si aucune sélection
+            const color = selectedColor || product.colors[0];
+            const size = selectedSize || (product.sizes.find(s => !product.unavailableSizes.includes(s)) || product.sizes[0]);
+            
+            const existingItem = cartSombre.find(item => 
+                item.id === productId && 
+                item.selectedColor?.code === color?.code && 
+                item.selectedSize === size
+            );
+            
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cartSombre.push({
+                    ...product,
+                    quantity: 1,
+                    selectedColor: color,
+                    selectedSize: size
+                });
+            }
+            
+            updateCartCountSombre();
+            showToastSombre("Produit ajouté au panier");
+            
+            // Si le panier est ouvert, mettre à jour l'affichage
+            if (cartSidebarSombre.classList.contains('active')) {
+                renderCartItemsSombre();
+            }
+        }
+        
+        // Basculer un produit dans la wishlist
+        function toggleWishlist(productId) {
+            const product = productsSombre.find(p => p.id === productId);
+            const existingIndex = wishlistSombre.findIndex(item => item.id === productId);
+            
+            if (existingIndex > -1) {
+                // Retirer de la wishlist
+                wishlistSombre.splice(existingIndex, 1);
+            } else {
+                // Ajouter à la wishlist
+                wishlistSombre.push(product);
+            }
+            
+            // Sauvegarder dans le localStorage
+            localStorage.setItem('wishlistSombre', JSON.stringify(wishlistSombre));
+            
+            // Mettre à jour le compteur
+            updateWishlistCountSombre();
+            
+            // Re-rendre les produits pour mettre à jour les icônes cœur
+            renderProductsSombre();
+            
+            // Si la wishlist est ouverte, mettre à jour l'affichage
+            if (wishlistSidebarSombre.classList.contains('active')) {
+                renderWishlistItemsSombre();
+            }
+        }
+        
+        // Afficher une notification toast
+        function showToastSombre(message) {
+            toastMessageSombre.textContent = message;
+            toastSombre.classList.add('active');
+            
+            setTimeout(() => {
+                toastSombre.classList.remove('active');
+            }, 3000);
+        }
+        
+        // Mettre à jour le compteur du panier
+        function updateCartCountSombre() {
+            const totalItems = cartSombre.reduce((sum, item) => sum + item.quantity, 0);
+            cartCountSombre.textContent = totalItems;
+            
+            if (totalItems > 0) {
+                cartCountSombre.style.display = 'flex';
+            } else {
+                cartCountSombre.style.display = 'none';
+            }
+        }
+        
+        // Mettre à jour le compteur de la wishlist
+        function updateWishlistCountSombre() {
+            wishlistCountSombre.textContent = wishlistSombre.length;
+            
+            if (wishlistSombre.length > 0) {
+                wishlistCountSombre.style.display = 'flex';
+            } else {
+                wishlistCountSombre.style.display = 'none';
+            }
+        }
+        
+        // Afficher les articles du panier
+        function renderCartItemsSombre() {
+            cartItemsSombre.innerHTML = '';
+            
+            if (cartSombre.length === 0) {
+                cartItemsSombre.appendChild(emptyCartSombre);
+                emptyCartSombre.style.display = 'block';
+                cartTotalSombre.textContent = '€0.00';
+                cartSubtotalSombre.textContent = '€0.00';
+                return;
+            }
+            
+            emptyCartSombre.style.display = 'none';
+            
+            let subtotal = 0;
+            
+            cartSombre.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                subtotal += itemTotal;
+                
+                const cartItem = document.createElement('div');
+                cartItem.className = 'cart-item-sombre';
+                cartItem.innerHTML = `
+                    <div class="cart-item-image-sombre">
+                        <img src="${item.image}" alt="${item.name}" class="cart-item-img">
+                    </div>
+                    <div class="cart-item-details-sombre">
+                        <div class="cart-item-title-sombre">${item.name}</div>
+                        <div class="cart-item-meta-sombre">
+                            ${item.selectedColor ? `Couleur: ${item.selectedColor.name} • ` : ''}
+                            ${item.selectedSize ? `Taille: ${item.selectedSize}` : 'Taille: Standard'}
+                        </div>
+                        <div class="cart-item-actions-sombre">
+                            <div class="cart-item-quantity-sombre">
+                                <button class="quantity-btn-sombre decrease" data-id="${item.id}" data-color="${item.selectedColor?.code}" data-size="${item.selectedSize}">-</button>
+                                <span style="color: var(--blanc-creme); min-width: 20px; text-align: center;">${item.quantity}</span>
+                                <button class="quantity-btn-sombre increase" data-id="${item.id}" data-color="${item.selectedColor?.code}" data-size="${item.selectedSize}">+</button>
+                            </div>
+                            <div class="cart-item-price-sombre">€${itemTotal.toFixed(2)}</div>
+                        </div>
+                    </div>
+                    <button class="remove-item-sombre" data-id="${item.id}" data-color="${item.selectedColor?.code}" data-size="${item.selectedSize}">
+                        <i class="fas fa-times"></i>
+                    </button>
+                `;
+                
+                cartItemsSombre.appendChild(cartItem);
+                
+                // Gestionnaires d'événements pour les boutons de quantité
+                const decreaseBtn = cartItem.querySelector('.decrease');
+                const increaseBtn = cartItem.querySelector('.increase');
+                const removeBtn = cartItem.querySelector('.remove-item-sombre');
+                
+                decreaseBtn.addEventListener('click', (e) => {
+                    const color = e.target.dataset.color || null;
+                    const size = e.target.dataset.size || null;
+                    updateQuantitySombre(item.id, -1, color, size);
+                });
+                
+                increaseBtn.addEventListener('click', (e) => {
+                    const color = e.target.dataset.color || null;
+                    const size = e.target.dataset.size || null;
+                    updateQuantitySombre(item.id, 1, color, size);
+                });
+                
+                removeBtn.addEventListener('click', (e) => {
+                    const color = e.target.dataset.color || null;
+                    const size = e.target.dataset.size || null;
+                    removeFromCartSombre(item.id, color, size);
+                });
+            });
+            
+            // Mettre à jour les totaux
+            cartSubtotalSombre.textContent = `€${subtotal.toFixed(2)}`;
+            cartTotalSombre.textContent = `€${subtotal.toFixed(2)}`;
+        }
+        
+        // Afficher les articles de la wishlist
+        function renderWishlistItemsSombre() {
+            wishlistItemsSombre.innerHTML = '';
+            
+            if (wishlistSombre.length === 0) {
+                wishlistItemsSombre.appendChild(emptyWishlistSombre);
+                emptyWishlistSombre.style.display = 'block';
+                return;
+            }
+            
+            emptyWishlistSombre.style.display = 'none';
+            
+            wishlistSombre.forEach(item => {
+                const wishlistItem = document.createElement('div');
+                wishlistItem.className = 'wishlist-item-sombre';
+                wishlistItem.innerHTML = `
+                    <div class="wishlist-item-image-sombre">
+                        <img src="${item.image}" alt="${item.name}" class="wishlist-item-img">
+                    </div>
+                    <div class="wishlist-item-details-sombre">
+                        <div class="wishlist-item-title-sombre">${item.name}</div>
+                        <div class="wishlist-item-meta-sombre">${item.category.charAt(0).toUpperCase() + item.category.slice(1)} • €${item.price.toFixed(2)}</div>
+                        <div class="wishlist-item-actions-sombre">
+                            <div class="wishlist-item-price-sombre">€${item.price.toFixed(2)}</div>
+                        </div>
+                    </div>
+                    <button class="remove-item-sombre" data-id="${item.id}">
+                        <i class="fas fa-times"></i>
+                    </button>
+                `;
+                
+                wishlistItemsSombre.appendChild(wishlistItem);
+                
+                // Gestionnaire d'événements pour le bouton de suppression
+                const removeBtn = wishlistItem.querySelector('.remove-item-sombre');
+                removeBtn.addEventListener('click', () => {
+                    toggleWishlist(item.id);
+                    showToastSombre("Retiré des favoris");
+                });
+                
+                // Gestionnaire pour cliquer sur l'article
+                wishlistItem.addEventListener('click', (e) => {
+                    if (!e.target.closest('.remove-item-sombre')) {
+                        closeQuickviewModal();
+                        openQuickview(item.id);
+                    }
+                });
+            });
+        }
+        
+        // Mettre à jour la quantité d'un article avec options
+        function updateQuantitySombre(productId, change, colorCode = null, size = null) {
+            const item = cartSombre.find(item => 
+                item.id === productId && 
+                (colorCode ? item.selectedColor?.code === colorCode : true) && 
+                (size ? item.selectedSize === size : true)
+            );
+            
+            if (item) {
+                item.quantity += change;
+                
+                if (item.quantity <= 0) {
+                    cartSombre = cartSombre.filter(cartItem => 
+                        !(cartItem.id === productId && 
+                        (colorCode ? cartItem.selectedColor?.code === colorCode : true) && 
+                        (size ? cartItem.selectedSize === size : true))
+                    );
+                }
+                
+                updateCartCountSombre();
+                renderCartItemsSombre();
+                showToastSombre("Panier mis à jour");
+            }
+        }
+        
+        // Supprimer un article du panier avec options
+        function removeFromCartSombre(productId, colorCode = null, size = null) {
+            cartSombre = cartSombre.filter(item => 
+                !(item.id === productId && 
+                (colorCode ? item.selectedColor?.code === colorCode : true) && 
+                (size ? item.selectedSize === size : true))
+            );
+            
+            updateCartCountSombre();
+            renderCartItemsSombre();
+            showToastSombre("Produit retiré du panier");
+        }
+        
+        // Commander via WhatsApp
+        function orderViaWhatsAppSombre() {
+            if (cartSombre.length === 0) {
+                showToastSombre("Votre panier est vide");
+                return;
+            }
+            
+            // REMPLACEZ CE NUMÉRO PAR LE VÔTRE
+            const phoneNumber = "+33123456789";
+            
+            let message = "Bonjour Édition Noire,%0A%0AJe souhaite commander les articles suivants :%0A%0A";
+            
+            cartSombre.forEach((item, index) => {
+                message += `${index + 1}. ${item.name}`;
+                if (item.selectedColor) message += ` - Couleur: ${item.selectedColor.name}`;
+                if (item.selectedSize) message += ` - Taille: ${item.selectedSize}`;
+                message += ` - Quantité: ${item.quantity} - €${(item.price * item.quantity).toFixed(2)}%0A`;
+            });
+            
+            const total = cartSombre.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            message += `%0ATotal : €${total.toFixed(2)}%0A%0AMes informations :%0A- Nom : %0A- Adresse : %0A- Téléphone : %0A%0AMerci !`;
+            
+            const url = `https://wa.me/${phoneNumber}?text=${message}`;
+            window.open(url, '_blank');
+        }
+        
+        // Ajouter tous les favoris au panier
+        function addAllWishlistToCart() {
+            if (wishlistSombre.length === 0) {
+                showToastSombre("Vos favoris sont vides");
+                return;
+            }
+            
+            wishlistSombre.forEach(product => {
+                const color = product.colors[0];
+                const size = product.sizes.find(s => !product.unavailableSizes.includes(s)) || product.sizes[0];
+                
+                const existingItem = cartSombre.find(item => 
+                    item.id === product.id && 
+                    item.selectedColor?.code === color.code && 
+                    item.selectedSize === size
+                );
+                
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    cartSombre.push({
+                        ...product,
+                        quantity: 1,
+                        selectedColor: color,
+                        selectedSize: size
+                    });
+                }
+            });
+            
+            updateCartCountSombre();
+            showToastSombre("Tous les favoris ajoutés au panier");
+            
+            // Si le panier est ouvert, mettre à jour l'affichage
+            if (cartSidebarSombre.classList.contains('active')) {
+                renderCartItemsSombre();
+            }
+        }
+        
+        // Configurer les écouteurs d'événements
+        function setupEventListenersSombre() {
+            // Ouvrir/fermer le panier
+            cartIconSombre.addEventListener('click', () => {
+                cartSidebarSombre.classList.add('active');
+                backdropSombre.classList.add('active');
+                renderCartItemsSombre();
+            });
+            
+            closeCartSombre.addEventListener('click', closeCartModalSombre);
+            backdropSombre.addEventListener('click', closeAllModals);
+            
+            // Ouvrir/fermer la wishlist
+            wishlistIconSombre.addEventListener('click', () => {
+                wishlistSidebarSombre.classList.add('active');
+                backdropSombre.classList.add('active');
+                renderWishlistItemsSombre();
+            });
+            
+            closeWishlistSombre.addEventListener('click', closeWishlistModalSombre);
+            
+            // Ajouter tous les favoris au panier
+            wishlistToCartSombre.addEventListener('click', addAllWishlistToCart);
+            
+            // Commander via WhatsApp
+            whatsappOrderSombre.addEventListener('click', orderViaWhatsAppSombre);
+            
+            // Recherche
+            searchIcon.addEventListener('click', openSearchModal);
+            closeSearch.addEventListener('click', closeSearchModal);
+            
+            // Recherche en temps réel
+            searchInput.addEventListener('input', (e) => {
+                performSearch(e.target.value);
+            });
+            
+            // Aperçu rapide
+            closeQuickview.addEventListener('click', closeQuickviewModal);
+            
+            // Fermer les modals avec Escape
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    if (searchOverlay.classList.contains('active')) {
+                        closeSearchModal();
+                    } else if (quickviewOverlay.classList.contains('active')) {
+                        closeQuickviewModal();
+                    } else if (cartSidebarSombre.classList.contains('active') || wishlistSidebarSombre.classList.contains('active')) {
+                        closeAllModals();
+                    }
+                }
+            });
+            
+            // Filtres produits
+            filterButtonsSombre.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Retirer la classe active de tous les boutons
+                    filterButtonsSombre.forEach(btn => btn.classList.remove('active'));
+                    // Ajouter la classe active au bouton cliqué
+                    button.classList.add('active');
+                    // Mettre à jour le filtre actif
+                    activeFilterSombre = button.dataset.filter;
+                    // Re-rendre les produits
+                    renderProductsSombre();
+                });
+            });
+            
+            // Navigation fluide
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Fermer tous les modals
+                        closeAllModals();
+                    }
+                });
+            });
+        }
+        
+        // Fermer le modal du panier
+        function closeCartModalSombre() {
+            cartSidebarSombre.classList.remove('active');
+            backdropSombre.classList.remove('active');
+        }
+        
+        // Fermer le modal de la wishlist
+        function closeWishlistModalSombre() {
+            wishlistSidebarSombre.classList.remove('active');
+            backdropSombre.classList.remove('active');
+        }
+        
+        // Fermer tous les modals
+        function closeAllModals() {
+            closeCartModalSombre();
+            closeWishlistModalSombre();
+            closeSearchModal();
+            closeQuickviewModal();
+            backdropSombre.classList.remove('active');
+        }
+        
+        // Animation au défilement
+        function setupScrollAnimationsSombre() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible-sombre');
+                    }
+                });
+            }, observerOptions);
+            
+            // Observer les éléments à animer
+            document.querySelectorAll('.hidden-sombre').forEach(el => {
+                observer.observe(el);
+            });
+        }
+        
+        // Header scroll effect
+        function setupHeaderScrollSombre() {
+            const header = document.querySelector('.header-sombre');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
